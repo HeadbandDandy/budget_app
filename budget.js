@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 
 anychart.onDocumentReady(function(){
-    let budget = [
+    var budget = [
         {expense: 'gas', value: 67},
         {liability: 'subscriptions', value: 23}
     ]
@@ -21,7 +21,7 @@ chart.title("Your Budget!");
 
 chart.data(budget);
 
-chart.container('container');
+chart.container('#pieChart');
 chart.draw();
 
 
